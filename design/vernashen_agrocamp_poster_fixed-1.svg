@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <title>Վերնաշեն · 3 օր ուրիշ կյանքում</title>
+  <desc>Warm editable vector poster with corrected card layout and unclipped illustrations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF9F0"/>
+      <stop offset="100%" stop-color="#F7EEDC"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD996"/>
+      <stop offset="100%" stop-color="#F2B86C"/>
+    </linearGradient>
+    <linearGradient id="m1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D6E3CD"/>
+      <stop offset="100%" stop-color="#BDD0B2"/>
+    </linearGradient>
+    <linearGradient id="m2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A9C3A5"/>
+      <stop offset="100%" stop-color="#86A88B"/>
+    </linearGradient>
+    <linearGradient id="m3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#75977E"/>
+      <stop offset="100%" stop-color="#567A63"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#cfb998" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      text{font-family:'Noto Sans Armenian','DejaVu Sans',sans-serif}
+      .title{fill:#234C3A;font-weight:900;letter-spacing:-2px}
+      .sub{fill:#4F6859}
+      .muted{fill:#7A7D70}
+      .info{fill:#244937;font-weight:700}
+      .green{stroke:#406752;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .terra{stroke:#C27B4E;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    </style>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <path d="M-30 95C50 30 220 18 318 96c70 57 66 176-18 227-88 54-246 38-311-53-35-49-31-127 11-174Z" fill="#F8E7CE"/>
+  <path d="M764 48C866 9 998 46 1034 135c25 62-5 146-81 166-89 23-177-16-221-87-36-58-8-181 68-214Z" fill="#F5E9D8"/>
+
+  <g transform="translate(70 48)">
+    <g class="green" stroke-width="5">
+      <path d="M0 42 31 0 62 36 92 12 132 52"/>
+      <path d="M38 48 C54 60 70 60 85 45" stroke-width="4"/>
+    </g>
+    <text x="154" y="29" font-size="28" font-weight="800" fill="#244937">Արահետի ներկայացմամբ</text>
+    <path d="M154 48H503" stroke="#D1C4AF" stroke-width="2"/>
+    <text x="154" y="76" font-size="18" fill="#7A7D70">agro camp / աշնանային արկած</text>
+  </g>
+
+  <g transform="translate(890 145)">
+    <circle r="94" fill="url(#sun)"/>
+    <circle r="108" fill="none" stroke="#EFC171" stroke-width="2.5" stroke-dasharray="3 11"/>
+  </g>
+
+  <g id="hero">
+    <text x="62" y="288" font-size="154" font-weight="900" fill="#C57047">3</text>
+    <text x="210" y="286" font-size="130" class="title">օր</text>
+    <text x="61" y="401" font-size="112" class="title">ուրիշ</text>
+    <text x="61" y="505" font-size="112" class="title">կյանքում</text>
+    <path d="M62 527C132 513 200 545 278 532C353 519 401 510 472 533" class="terra" stroke-width="5" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(760 275)">
+    <path d="M4 64C44 39 90 15 146 0C133 41 103 74 65 91C39 102 18 92 4 64Z" fill="#EED2AA"/>
+    <path d="M18 67C78 31 101 19 144 6" class="terra" stroke-width="5"/>
+    <path d="M72 32C70 53 67 68 63 82M96 22C94 44 92 58 90 71M47 44C49 58 51 69 54 82" class="terra" stroke-width="3.2"/>
+  </g>
+
+  <text x="66" y="588" font-size="30" font-weight="700" class="sub">Վերնաշենի ագրոճամբար  •  13–15 տարեկաններ</text>
+  <text x="66" y="625" font-size="22" class="muted">ջերմություն • ագրո • արշավ • խարույկ • նոր ընկերներ</text>
+
+  <!-- Corrected feature cards -->
+  <g id="cards" filter="url(#shadow)">
+    <g transform="translate(64 664)">
+      <rect width="222" height="136" rx="28" fill="#F1E1C8"/>
+      <g transform="translate(52 18)">
+        <path d="M1 44C-6 25 6 7 27 8C36-4 54-5 65 2C84-2 102 15 99 36C91 54 18 61 1 44Z" fill="#DCA46C" stroke="#9E6946" stroke-width="3"/>
+        <path d="M18 24Q23 13 31 9M49 26Q53 13 61 9M77 28Q80 18 87 14" fill="none" stroke="#FFF2D9" stroke-width="6" stroke-linecap="round"/>
+        <path d="M12 51Q48 60 90 50" fill="none" stroke="#BB8157" stroke-width="3"/>
+      </g>
+      <text x="111" y="115" text-anchor="middle" font-size="27" font-weight="800" fill="#765437">Հացթխում</text>
+    </g>
+
+    <g transform="translate(304 664)">
+      <rect width="192" height="136" rx="28" fill="#DBE8D5"/>
+      <g transform="translate(46 18)">
+        <path d="M0 62 29 18 53 46 80 10 112 63Z" fill="#8AB8A8" stroke="#4D7B69" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M20 30 29 18 39 29M71 22 80 10 91 27" fill="none" stroke="#EFF7F0" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="94" cy="40" r="6" fill="#D78E6A"/>
+        <path d="M94 48 86 64M94 49 104 62M92 52 81 56" fill="none" stroke="#355D4A" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <text x="96" y="115" text-anchor="middle" font-size="27" font-weight="800" fill="#456854">Արշավ</text>
+    </g>
+
+    <g transform="translate(514 664)">
+      <rect width="196" height="136" rx="28" fill="#F2DDD4"/>
+      <g transform="translate(34 16)">
+        <path d="M8 78Q39 34 91 17" fill="none" stroke="#568064" stroke-width="5" stroke-linecap="round"/>
+        <path d="M33 44Q19 24 7 34Q13 49 31 49" fill="#A0C69B" stroke="#547E5F" stroke-width="2"/>
+        <path d="M61 27Q77 10 90 20Q81 34 62 35" fill="#A0C69B" stroke="#547E5F" stroke-width="2"/>
+        <ellipse cx="42" cy="69" rx="13" ry="16" fill="#D77A57"/>
+        <ellipse cx="74" cy="60" rx="12" ry="16" fill="#C9684F"/>
+        <path d="M40 54 36 49M44 54 49 49M72 45 67 40M76 45 81 40" fill="none" stroke="#93543F" stroke-width="2.5"/>
+      </g>
+      <text x="98" y="115" text-anchor="middle" font-size="27" font-weight="800" fill="#9B5B44">Մասուր</text>
+    </g>
+
+    <g transform="translate(728 664)">
+      <rect width="242" height="136" rx="28" fill="#E3E7D6"/>
+      <g transform="translate(72 18)">
+        <path d="M16 64 74 42M17 42 74 64" fill="none" stroke="#976543" stroke-width="8" stroke-linecap="round"/>
+        <path d="M43 54C18 42 31 27 43 14C43 28 58 27 55 39C64 30 68 37 64 48Q58 64 43 54Z" fill="#EE9854" stroke="#BF6445" stroke-width="2.2"/>
+        <path d="M43 54C32 46 41 35 46 29C46 38 55 45 51 51Z" fill="#FFDA7C"/>
+      </g>
+      <text x="121" y="115" text-anchor="middle" font-size="27" font-weight="800" fill="#4D6650">Խարույկ</text>
+    </g>
+  </g>
+
+  <path d="M58 827C249 794 396 840 547 817S841 835 1025 813" stroke="#D4C6AA" stroke-width="2.5" fill="none" stroke-dasharray="4 11"/>
+
+  <g id="landscape">
+    <rect x="0" y="844" width="1080" height="506" fill="#F4EEE2"/>
+    <path d="M0 1048 106 922 201 1004 332 860 477 1016 615 888 737 1008 874 888 1080 1048V1350H0Z" fill="url(#m1)"/>
+    <path d="M0 1105 136 957 262 1065 414 905 568 1083 741 938 892 1040 1080 969V1350H0Z" fill="url(#m2)"/>
+    <path d="M0 1182Q107 1082 220 1119T447 1094Q552 1074 658 1137T881 1112Q975 1096 1080 1158V1350H0Z" fill="url(#m3)"/>
+    <path d="M0 1240C130 1189 236 1174 318 1197C397 1220 451 1263 552 1255C666 1245 725 1165 838 1160C926 1157 1007 1191 1080 1246V1350H0Z" fill="#315B46"/>
+    <path d="M629 1338C579 1287 547 1232 562 1190C579 1141 650 1115 705 1090C760 1065 774 1042 751 1020" fill="none" stroke="#C79A62" stroke-width="22" stroke-linecap="round" opacity="0.85"/>
+    <path d="M627 1338C578 1287 548 1233 562 1192C577 1148 647 1118 702 1092C755 1066 770 1043 748 1021" fill="none" stroke="#E9D2A1" stroke-width="10" stroke-linecap="round" opacity="0.95"/>
+
+    <!-- warm illustrated seated kids -->
+    <g transform="translate(242 958)">
+      <path d="M-54 218Q-46 128 17 116L52 218Z" fill="#B87551"/>
+      <path d="M102 220Q109 129 171 116L214 220Z" fill="#678F79"/>
+      <path d="M40 220Q35 111 92 94Q145 123 152 220Z" fill="#E8BD8B"/>
+      <path d="M-8 137Q5 62 45 70Q81 79 74 140Z" fill="#E8B78B"/>
+      <path d="M-7 108Q-12 47 34 39Q77 48 76 104Q58 83 34 87Z" fill="#554839"/>
+      <path d="M124 131Q129 60 168 68Q204 79 198 139Z" fill="#DFAE80"/>
+      <path d="M120 102Q119 43 164 38Q211 46 206 107Q186 84 163 88Z" fill="#6A503D"/>
+      <path d="M49 132Q57 60 96 64Q138 72 133 133Z" fill="#DDAA81"/>
+      <path d="M49 112Q41 44 88 28Q133 35 136 114Q117 79 88 71Z" fill="#473C36"/>
+      <path d="M77 168Q102 126 123 151" fill="none" stroke="#EAB78B" stroke-width="14" stroke-linecap="round"/>
+      <path d="M123 151 139 133M123 151 146 151" fill="none" stroke="#DCA676" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(74 1184)" class="green" stroke-width="4" opacity="0.8">
+      <path d="M15 90C18 62 19 42 22 0"/>
+      <path d="M22 28C4 40-2 54 4 69" stroke-width="3.2"/>
+      <path d="M22 46C38 39 49 42 58 54" stroke-width="3.2"/>
+      <path d="M22 62C6 74 3 84 9 96" stroke-width="3.2"/>
+    </g>
+    <g transform="translate(920 1155)" class="green" stroke-width="4" opacity="0.75">
+      <path d="M15 103C16 72 16 43 18 0"/>
+      <path d="M18 24C35 16 48 18 57 30" stroke-width="3.2"/>
+      <path d="M18 43C2 52-8 61-4 74" stroke-width="3.2"/>
+      <path d="M18 64C35 58 50 62 60 77" stroke-width="3.2"/>
+    </g>
+  </g>
+
+  <g id="info" filter="url(#shadow)">
+    <rect x="43" y="1163" width="994" height="149" rx="32" fill="#FFFDF7" opacity="0.97"/>
+    <text x="79" y="1222" font-size="28" class="info">Վերնաշեն, Վայոց ձոր</text>
+    <text x="79" y="1269" font-size="25" class="sub">27–29 հոկտեմբեր</text>
+    <path d="M402 1187V1287" stroke="#E1D5C3" stroke-width="2"/>
+    <text x="438" y="1222" font-size="28" class="info">13–15 տարեկաններ</text>
+    <text x="438" y="1269" font-size="25" class="sub">3 օր / 2 գիշեր</text>
+    <path d="M760 1187V1287" stroke="#E1D5C3" stroke-width="2"/>
+    <text x="804" y="1247" font-size="54" font-weight="900" fill="#C56F47">29,000 ֏</text>
+  </g>
+</svg>
