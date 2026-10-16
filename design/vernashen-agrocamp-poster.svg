@@ -1,42 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
 <title>Վերնաշեն · Երեք օր ուրիշ կյանքում · Arahet airy edition</title>
-<desc>Editable SVG poster. All typography stays live text. Bright alpine blue and coral alternative style.</desc>
+<desc>Editable SVG poster. All typography stays live text. Soft airy alpine palette with restrained botanical pencil sketches and editable vector elements.</desc>
 <defs>
-<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E5F7FF"/><stop offset="1" stop-color="#F7FCFF"/></linearGradient>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F8FCFA"/><stop offset="1" stop-color="#FFF9F0"/></linearGradient>
 <linearGradient id="hills" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C6EAE8"/><stop offset="1" stop-color="#8CCBC8"/></linearGradient>
 <style>
 text{font-family:'Noto Sans Armenian','DejaVu Sans',sans-serif}
-.title{font-weight:900;fill:#163E62;letter-spacing:-2px}
+.title{font-weight:900;fill:#254E49;letter-spacing:-2px}
 .small{font-size:24px;fill:#416881}
-.info{font-size:27px;font-weight:700;fill:#163E62}
+.info{font-size:27px;font-weight:700;fill:#254E49}
 </style>
 </defs>
-<g id="background"><rect width="1080" height="1350" fill="#FCFEFF"/><rect x="0" y="0" width="1080" height="778" fill="url(#sky)"/></g>
-<g id="logo" fill="none" stroke="#28677C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M66 91 95 53 121 76 141 46 181 91"/><path d="M91 111h76" stroke-width="3"/></g>
-<g id="branding"><text x="208" y="76" font-size="27" font-weight="800" fill="#215672">ԱՐԱՀԵՏ</text><text x="208" y="106" class="small">ներկայացնում է · AGRO CAMP</text></g>
-<g id="sun" transform="translate(890 186)"><circle r="95" fill="#FFC65E"/><circle r="115" fill="none" stroke="#FFCA6B" stroke-width="3" stroke-dasharray="4 16"/><path d="M-36 -13 Q-17 -36 1 -12 M16 -12 Q31 -37 48 -12" stroke="#F9A843" stroke-width="5" fill="none" stroke-linecap="round"/></g>
-<g id="title"><text x="65" y="285" class="title" font-size="152">3 ՕՐ</text><text x="65" y="419" class="title" font-size="104">ՈՒՐԻՇ</text><text x="65" y="523" class="title" font-size="100">ԿՅԱՆՔՈՒՄ</text><path d="M73 547 Q260 566 445 547" fill="none" stroke="#FF7C62" stroke-width="13" stroke-linecap="round"/></g>
-<g id="subtitle"><text x="68" y="605" font-size="30" font-weight="700" fill="#225875">Վերնաշենի ագրոճամբար</text><text x="68" y="646" font-size="25" fill="#426F80">13–15 տարեկան պատանիների համար</text></g>
+<g id="background"><rect width="1080" height="1350" fill="#FFFCF6"/><rect x="0" y="0" width="1080" height="778" fill="url(#sky)"/></g>
+<g id="logo" fill="none" stroke="#45776B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M66 91 95 53 121 76 141 46 181 91"/><path d="M91 111h76" stroke-width="3"/></g>
+<g id="branding"><text x="208" y="76" font-size="27" font-weight="800" fill="#34665C">ԱՐԱՀԵՏ</text><text x="208" y="106" class="small">ներկայացնում է · AGRO CAMP</text></g>
+<g id="rosehip-sketch" transform="translate(805 300)" stroke="#577C5C" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 140 Q75 76 112 0" stroke-width="5" fill="none"/><path d="M44 111 Q12 78 24 61 Q58 65 59 91" fill="#B1CDA4" stroke-width="2"/><path d="M76 63 Q106 48 125 62 Q117 86 87 82" fill="#B1CDA4" stroke-width="2"/>
+<path d="M57 96Q90 97 95 123" fill="none" stroke-width="3"/><ellipse cx="105" cy="125" rx="14" ry="18" fill="#D88668" stroke="#A9604C" stroke-width="2"/><path d="M105 107l-5-8m5 8l8-8" fill="none" stroke="#A9604C" stroke-width="2"/>
+<path d="M85 40Q46 30 44 5" fill="none" stroke-width="3"/><ellipse cx="41" cy="3" rx="13" ry="17" fill="#D88668" stroke="#A9604C" stroke-width="2"/><path d="M41-15l-6-6m6 6l7-8" fill="none" stroke="#A9604C" stroke-width="2"/></g>
+<g id="sun" transform="translate(890 186)"><circle r="95" fill="#F8D18A"/><circle r="115" fill="none" stroke="#FFCA6B" stroke-width="3" stroke-dasharray="4 16"/><path d="M-36 -13 Q-17 -36 1 -12 M16 -12 Q31 -37 48 -12" stroke="#F9A843" stroke-width="5" fill="none" stroke-linecap="round"/></g>
+<g id="title"><text x="65" y="285" class="title" font-size="152">3 ՕՐ</text><text x="65" y="419" class="title" font-size="104">ՈՒՐԻՇ</text><text x="65" y="523" class="title" font-size="100">ԿՅԱՆՔՈՒՄ</text><path d="M73 547 Q260 566 445 547" fill="none" stroke="#DDA179" stroke-width="13" stroke-linecap="round"/></g>
+<g id="subtitle"><text x="68" y="605" font-size="30" font-weight="700" fill="#34675C">Վերնաշենի ագրոճամբար</text><text x="68" y="646" font-size="25" fill="#59766B">13–15 տարեկան պատանիների համար</text></g>
 <g id="feature-tags">
-<rect x="66" y="687" width="224" height="64" rx="32" fill="#D0EEE8"/><text x="96" y="730" font-size="25" font-weight="700" fill="#155D64">Հացթխում</text>
+<rect x="66" y="687" width="224" height="64" rx="32" fill="#DFEEDF"/><text x="96" y="730" font-size="25" font-weight="700" fill="#155D64">Հացթխում</text>
 <rect x="309" y="687" width="171" height="64" rx="32" fill="#FFEAB8"/><text x="347" y="730" font-size="25" font-weight="700" fill="#775315">Արշավ</text>
-<rect x="499" y="687" width="179" height="64" rx="32" fill="#FFDCD5"/><text x="538" y="730" font-size="25" font-weight="700" fill="#A3473B">Մասուր</text>
-<rect x="697" y="687" width="210" height="64" rx="32" fill="#DBE8FC"/><text x="733" y="730" font-size="25" font-weight="700" fill="#385B94">Խարույկ</text>
+<rect x="499" y="687" width="179" height="64" rx="32" fill="#F4DCCE"/><text x="538" y="730" font-size="25" font-weight="700" fill="#A3473B">Մասուր</text>
+<rect x="697" y="687" width="210" height="64" rx="32" fill="#E4EEDB"/><text x="733" y="730" font-size="25" font-weight="700" fill="#456A60">Խարույկ</text>
 </g>
-<g id="mountain-art">
-<path d="M0 1013 178 828 308 948 486 786 674 974 856 829 1080 1011 V1213H0Z" fill="#C7E5E8"/>
-<path d="M0 1072 188 907 337 1067 522 863 719 1046 894 921 1080 1058 V1213H0Z" fill="#91D1D4"/>
+<g id="pencil-details" fill="none" stroke-linecap="round">
+<path d="M80 805Q142 788 204 812T334 812" stroke="#C39577" stroke-width="3" stroke-dasharray="3 10"/>
+<path d="M829 813q25-16 47-9m-5 15q33-11 51 0" stroke="#C39577" stroke-width="3"/>
+<path d="M105 970Q139 935 162 916l28 28 31-37 44 51" stroke="#6E9683" stroke-width="3.5"/>
+</g><g id="mountain-art">
+<path d="M0 1013 178 828 308 948 486 786 674 974 856 829 1080 1011 V1213H0Z" fill="#D9E5D2"/>
+<path d="M0 1072 188 907 337 1067 522 863 719 1046 894 921 1080 1058 V1213H0Z" fill="#A5CDBB"/>
 <path d="M0 1150 Q167 1006 330 1111 T660 1083 Q822 984 1080 1120 V1250H0Z" fill="url(#hills)"/>
-<path d="M0 1215 Q257 1092 489 1192 T1080 1150 V1277H0Z" fill="#48A9A6"/>
-<path d="M740 1179 Q808 1107 880 1069" stroke="#ECF9F9" stroke-width="10" stroke-linecap="round" fill="none" stroke-dasharray="2 20"/>
-<path d="M86 1073 Q93 1040 118 1013 Q134 1047 132 1073 M128 1073 Q140 1029 168 1007 Q181 1048 177 1073" fill="#2B8D90" opacity=".65"/>
+<path d="M0 1215 Q257 1092 489 1192 T1080 1150 V1277H0Z" fill="#8AB7A2"/>
+<path d="M740 1179 Q808 1107 880 1069" stroke="#F5F0D9" stroke-width="10" stroke-linecap="round" fill="none" stroke-dasharray="2 20"/>
+<path d="M86 1073 Q93 1040 118 1013 Q134 1047 132 1073 M128 1073 Q140 1029 168 1007 Q181 1048 177 1073" fill="#648F77" opacity=".65"/>
 </g>
 <g id="little-trail-mark" stroke="#FF886C" stroke-width="5" stroke-linecap="round" fill="none"><path d="M920 534 C957 564 978 609 952 648"/><path d="m945 631 7 19 19-11"/></g>
-<g id="bottom-information"><rect x="45" y="1112" width="990" height="197" rx="34" fill="#FFFFFF" stroke="#DCECF4" stroke-width="3"/>
+<g id="wheat-pencil" transform="translate(966 784)" fill="none" stroke="#B9915C" stroke-width="3.5" stroke-linecap="round"><path d="M1 133Q24 59 15 2"/><path d="M15 35Q-3 23 0 11M17 55Q41 45 40 31M12 77Q-14 61 -10 48M11 97Q39 90 37 72"/></g>
+<g id="bread-pencil" transform="translate(134 825)" fill="none" stroke="#B88762" stroke-width="3.5" stroke-linecap="round"><path d="M0 36 Q-6 3 43 0 Q89-2 91 34Z"/><path d="M21 8l12 18m11-21l12 20m10-20l10 20"/></g>
+<g id="bottom-information"><rect x="45" y="1112" width="990" height="197" rx="34" fill="#FFFFFF" stroke="#E8E8DA" stroke-width="3"/>
 <text x="82" y="1174" class="info">📍 Վերնաշեն · Վայոց ձոր</text>
 <text x="82" y="1228" class="info">27–29 հոկտեմբեր</text>
 <text x="82" y="1273" class="small">3 օր / 2 գիշեր</text>
-<rect x="745" y="1168" width="254" height="94" rx="24" fill="#FF846B"/>
+<rect x="745" y="1168" width="254" height="94" rx="24" fill="#E69372"/>
 <text x="773" y="1228" font-size="42" font-weight="900" fill="#FFFFFF">29,000 ֏</text>
 </g>
 </svg>
