@@ -253,10 +253,11 @@
       "title": "Տեղադրել հարցուպատասխանի story",
       "target": "1 story",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T14:02:51.628Z"
     },
     {
       "id": "outreach-2026-10-23-1",
@@ -559,6 +560,7 @@
     "7502d65e-9fd9-4b02-9bd4-e9a9f4fbb2a3",
     "2d8eabee-bf01-47a2-b103-b5071489683f",
     "70e9335a-6c75-4917-a474-f4393bbe9a66",
-    "05492ad8-7d68-40a4-8f8f-da0780818242"
+    "05492ad8-7d68-40a4-8f8f-da0780818242",
+    "3f2a45d0-cd4f-4ea8-b48d-6e571f22cb3b"
   ]
 }
