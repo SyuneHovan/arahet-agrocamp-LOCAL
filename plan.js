@@ -3,7 +3,7 @@
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const uid=()=>crypto.randomUUID();
   let server={schemaVersion:1,tasks:[],members:[],appliedOps:[]}, outbox=[], person='', scope='mine', connected=false;
-  let sending=false, loading=false, error='', timer, version=0, editing=null, draftBase=null, welcomed=false, lastSaved=0;
+  let sending=false, loading=false, error='', timer, version=0, editing=null, draftBase=null, welcomed=false, lastSaved=0, pickerTask=null;
   try{person=localStorage.getItem(personKey)||'';const saved=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(saved))outbox=saved;}catch{}
   function normalize(d){d.members??=[];d.appliedOps??=[];d.tasks.forEach(t=>{t.description??='';t.assigneeId??='';t.deleted??=false;});return d;}
   function optimistic(d,op){
@@ -29,7 +29,9 @@
     const done=subset.filter(t=>t.done).length;
     $('progressLabel').textContent=done+' / '+subset.length+' կատարված';$('progress').max=subset.length||1;$('progress').value=done;
     const visible=subset.filter(t=>!$('state').value||t.done===($('state').value==='done'));
-    $('tasks').innerHTML=[...new Set(visible.map(t=>t.date))].sort().map(date=>'<section><div class="day-heading"><h2>'+dayLabel(date)+'</h2><span>'+visible.filter(t=>t.date===date).length+'</span></div>'+visible.filter(t=>t.date===date).map(t=>{
+    const category=t=>t.category||'Տարածում';
+    const categoryOrder=['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ'];
+    $('tasks').innerHTML=[...new Set(visible.map(category))].sort((a,b)=>(categoryOrder.indexOf(a)<0?99:categoryOrder.indexOf(a))-(categoryOrder.indexOf(b)<0?99:categoryOrder.indexOf(b))).map(cat=>'<section><div class="day-heading"><h2>'+esc(cat)+'</h2><span>'+visible.filter(t=>category(t)===cat).length+'</span></div>'+visible.filter(t=>category(t)===cat).sort((a,b)=>a.date.localeCompare(b.date)).map(t=>{
       const m=d.members.find(m=>m.id===t.assigneeId),pending=outbox.some(o=>o.id===t.id);
       return '<article class="task '+(t.done?'done':'')+'"><input type="checkbox" id="check-'+esc(t.id)+'" data-id="'+esc(t.id)+'" aria-label="'+esc(t.title)+'" '+(t.done?'checked':'')+' '+(!connected?'disabled':'')+'><button class="task-main" data-edit="'+esc(t.id)+'" aria-label="Խմբագրել՝ '+esc(t.title)+'"><span class="task-title">'+esc(t.title)+'</span>'+(t.description||t.target?'<span class="task-note">'+esc(t.description||t.target)+'</span>':'')+'</button><div class="task-end"><span class="task-status" title="'+(pending?(error?'Չպահպանված':'Պահպանվում է'):'')+'">'+(pending?(error?'!':'◷'):'')+'</span><span class="avatar" title="'+esc(m?.name||('Դեր՝ '+(t.role||'չհանձնարարված')))+'" aria-label="'+esc(m?.name||t.role||'Չհանձնարարված')+'">'+esc(m?Array.from(m.name)[0]:t.role||'–')+'</span></div></article>';
     }).join('')+'</section>').join('')||'<div class="empty">'+(scope==='mine'&&!me?'Ընտրիր անունդ վերևում։':scope==='mine'?'Քեզ հանձնարարված առաջադրանք դեռ չկա։':'Այս ֆիլտրերով առաջադրանք չկա։')+'</div>';
@@ -76,6 +78,7 @@
     $('taskDate').value=t?.date||$('day').value||new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Yerevan',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
     $('taskAssignee').innerHTML='<option value="">Չհանձնարարված</option>'+d.members.map(m=>'<option value="'+esc(m.id)+'">'+esc(m.name)+'</option>').join('');
     $('taskAssignee').value=t?t.assigneeId:(d.members.some(m=>m.id===person)?person:'');
+    $('taskCategory').innerHTML=['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ'].map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');$('taskCategory').value=t?.category||'Տարածում';
     $('deleteTask').hidden=!t;$('taskForm').querySelector('[type=submit]').disabled=!connected;$('deleteTask').disabled=!connected;
     $('taskDialog').showModal();$('taskTitle').focus();
   }
@@ -84,10 +87,19 @@
     const t=view().tasks.find(t=>t.id===e.target.dataset.id);
     enqueue({type:'task.update',id:t.id,patch:{done:e.target.checked},base:{done:t.done}});
   });
-  $('tasks').addEventListener('click',e=>{const b=e.target.closest('[data-edit]');if(b)openTask(b.dataset.edit);});
+  $('tasks').addEventListener('click',e=>{const a=e.target.closest('[data-assign]');if(a){openPicker(a.dataset.assign,a);return;}const b=e.target.closest('[data-edit]');if(b)openTask(b.dataset.edit);});
+  function openPicker(id,anchor){
+    if(!connected)return;
+    pickerTask=id;const d=view(),t=d.tasks.find(x=>x.id===id&&!x.deleted);if(!t)return;
+    const menu=$('assignPicker');menu.innerHTML='<p class="picker-label">Պատասխանատու</p>'+[{id:'',name:'Չհանձնարարված'},...d.members].map(m=>'<button type="button" data-pick="'+esc(m.id)+'" class="picker-option" '+(t.assigneeId===m.id?'aria-current="true"':'')+'><span class="avatar">'+esc(m.id?Array.from(m.name)[0]:'–')+'</span>'+esc(m.name)+(t.assigneeId===m.id?' ✓':'')+'</button>').join('');
+    const rect=anchor.getBoundingClientRect();menu.style.top=Math.min(window.innerHeight-20,rect.bottom+6)+'px';menu.style.left=Math.max(8,Math.min(window.innerWidth-218,rect.right-208))+'px';menu.hidden=false;
+  }
+  $('assignPicker').onclick=e=>{const b=e.target.closest('[data-pick]');if(!b||!pickerTask)return;const t=view().tasks.find(x=>x.id===pickerTask);if(t&&t.assigneeId!==b.dataset.pick)enqueue({type:'task.update',id:t.id,patch:{assigneeId:b.dataset.pick},base:{assigneeId:t.assigneeId}});$('assignPicker').hidden=true;pickerTask=null;};
+  document.addEventListener('click',e=>{if(!e.target.closest('#assignPicker')&&!e.target.closest('[data-assign]')){$('assignPicker').hidden=true;pickerTask=null;}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('assignPicker').hidden=true;pickerTask=null;}});
   $('taskForm').onsubmit=e=>{
     e.preventDefault();if(!connected)return;
-    const vals={title:$('taskTitle').value.trim(),description:$('taskDescription').value,target:$('taskTarget').value,date:$('taskDate').value,assigneeId:$('taskAssignee').value};
+    const vals={title:$('taskTitle').value.trim(),description:$('taskDescription').value,target:$('taskTarget').value,date:$('taskDate').value,assigneeId:$('taskAssignee').value,category:$('taskCategory').value};
     if(!vals.title)return;
     if(editing){
       const patch={},base={};for(const [k,v]of Object.entries(vals))if(v!==draftBase[k]){patch[k]=v;base[k]=draftBase[k];}
