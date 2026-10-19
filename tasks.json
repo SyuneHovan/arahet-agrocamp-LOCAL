@@ -392,10 +392,11 @@
       "title": "Հիշեցնել, եթե գրանցումը դեռ բաց է",
       "target": "1 հիշեցում կամ փակ լինելու հաստատում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T14:10:59.328Z"
     },
     {
       "id": "outreach-2026-10-25-2",
@@ -573,6 +574,7 @@
     "5164077e-ce52-44b7-9592-d09029cf0060",
     "39682b90-f4fe-4045-bef1-2e8fb0c37e9d",
     "dc49e15c-1c5b-4a07-b7e9-f206fe147978",
-    "19ee2b2f-93b2-40bf-be85-7967a11127de"
+    "19ee2b2f-93b2-40bf-be85-7967a11127de",
+    "d35bfbcc-b105-4f93-af7e-3b0f71af62a4"
   ]
 }
