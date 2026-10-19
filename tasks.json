@@ -367,10 +367,11 @@
       "title": "Գրանցված ընտանիքներին խնդրել կամավոր տարածել",
       "target": "2 ընտանիք",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T14:10:50.838Z"
     },
     {
       "id": "outreach-2026-10-24-5",
@@ -571,6 +572,7 @@
     "3ee31b2a-a675-43c9-bba9-4eace1cce582",
     "5164077e-ce52-44b7-9592-d09029cf0060",
     "39682b90-f4fe-4045-bef1-2e8fb0c37e9d",
-    "dc49e15c-1c5b-4a07-b7e9-f206fe147978"
+    "dc49e15c-1c5b-4a07-b7e9-f206fe147978",
+    "19ee2b2f-93b2-40bf-be85-7967a11127de"
   ]
 }
