@@ -6,7 +6,7 @@ class StoreError extends Error {
 const bad = () => { throw new StoreError(400,'invalid_change'); };
 const text = (x,max) => typeof x==='string' && x.length<=max;
 const validId = x => typeof x==='string' && /^[a-zA-Z0-9_-]{1,100}$/.test(x);
-const fields = {title:x=>text(x,240)&&!!x.trim(),description:x=>text(x,6000),target:x=>text(x,500),date:x=>/^20\d\d-\d\d-\d\d$/.test(x)&&new Date(x+'T12:00:00Z').toISOString().slice(0,10)===x,role:x=>['','Ա','Բ','Գ','Դ'].includes(x),assigneeId:x=>x===''||validId(x),done:x=>typeof x==='boolean'};
+const fields = {category:x=>text(x,100)&&['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ'].includes(x),title:x=>text(x,240)&&!!x.trim(),description:x=>text(x,6000),target:x=>text(x,500),date:x=>/^20\d\d-\d\d-\d\d$/.test(x)&&new Date(x+'T12:00:00Z').toISOString().slice(0,10)===x,role:x=>['','Ա','Բ','Գ','Դ'].includes(x),assigneeId:x=>x===''||validId(x),done:x=>typeof x==='boolean'};
 function normalize(data) {
   if(data?.schemaVersion!==1||!Array.isArray(data.tasks)||data.tasks.length>5000||
     new Set(data.tasks.map(t=>t.id)).size!==data.tasks.length||
@@ -14,7 +14,7 @@ function normalize(data) {
     throw new StoreError(502,'invalid_store');
   data.members ??= []; data.appliedOps ??= [];
   if(!Array.isArray(data.members)||!Array.isArray(data.appliedOps))throw new StoreError(502,'invalid_store');
-  for(const t of data.tasks){t.description??='';t.assigneeId??='';t.deleted??=false;}
+  for(const t of data.tasks){t.description??='';t.category??='Տարածում';t.assigneeId??='';t.deleted??=false;}
   return data;
 }
 function apply(data,operations) {
@@ -39,7 +39,7 @@ function apply(data,operations) {
       if(!t||Object.keys(t).some(k=>!Object.hasOwn(fields,k))||!fields.title(t.title)||!fields.date(t.date))bad();
       for(const [k,v] of Object.entries(t))if(!fields[k](v))bad();
       if(t.assigneeId&&!data.members.some(m=>m.id===t.assigneeId))bad();
-      data.tasks.push({description:'',target:'',role:'',assigneeId:'',done:false,...t,id:op.id,revision:0,deleted:false});
+      data.tasks.push({description:'',target:'',role:'',category:'Տարածում',assigneeId:'',done:false,...t,id:op.id,revision:0,deleted:false});
     }else {
       const t=data.tasks.find(t=>t.id===op.id);
       if(!t)throw new StoreError(404,'unknown_task');
