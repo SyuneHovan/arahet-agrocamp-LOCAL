@@ -46,10 +46,11 @@
       "title": "Կազմել դպրոցական և ծնողական կապերի ցուցակը",
       "target": "15 կապ",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T13:56:37.882Z"
     },
     {
       "id": "outreach-2026-10-19-5",
@@ -519,6 +520,7 @@
     "9a9e270c-95f7-4b26-9b91-26664119027b",
     "1bbbecaa-7c47-455d-9f85-71b89a63afe0",
     "2549e45e-adab-4431-aa36-26e40a8ce1c7",
-    "aa2352b7-aba8-4da8-991a-1fcf83263999"
+    "aa2352b7-aba8-4da8-991a-1fcf83263999",
+    "d9e9667e-e46d-44fd-9e7c-05cc3d6c713b"
   ]
 }
