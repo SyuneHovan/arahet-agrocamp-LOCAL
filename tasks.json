@@ -19,9 +19,9 @@
       "role": "Դ",
       "title": "Պատրաստել հիմնական հայտարարությունը",
       "target": "1 պատրաստ տեքստ",
-      "done": false,
-      "revision": 4,
-      "updatedAt": "2026-10-19T13:30:07.028Z",
+      "done": true,
+      "revision": 5,
+      "updatedAt": "2026-10-19T13:50:41.971Z",
       "description": "",
       "assigneeId": "",
       "deleted": false
@@ -486,6 +486,7 @@
     "c67447ec-ba0c-41c4-bac9-37d4db1fee93",
     "10924dd4-33f0-404e-ae34-a42da76a53ed",
     "0aa04245-7443-4d54-a7e9-ecddbd7f45b7",
-    "ffe698d5-15c7-46a9-abf7-44928777becd"
+    "ffe698d5-15c7-46a9-abf7-44928777becd",
+    "1173c9a0-e23b-44a0-8205-045049ca3ec5"
   ]
 }
