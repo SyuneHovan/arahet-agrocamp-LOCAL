@@ -279,10 +279,11 @@
       "title": "Քաղաքավարի հիշեցնել հետաքրքրվածներին",
       "target": "Յուրաքանչյուր հետաքրքրվածին առավելագույնը 1 հիշեցում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T14:04:23.006Z"
     },
     {
       "id": "outreach-2026-10-23-3",
@@ -563,6 +564,7 @@
     "70e9335a-6c75-4917-a474-f4393bbe9a66",
     "05492ad8-7d68-40a4-8f8f-da0780818242",
     "3f2a45d0-cd4f-4ea8-b48d-6e571f22cb3b",
-    "35bb703e-9155-4afb-a515-03359d7619e8"
+    "35bb703e-9155-4afb-a515-03359d7619e8",
+    "3ee31b2a-a675-43c9-bba9-4eace1cce582"
   ]
 }
