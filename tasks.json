@@ -240,11 +240,11 @@
       "title": "Տեղադրել երկրորդ հրապարակումը",
       "target": "1 հրապարակում",
       "done": false,
-      "revision": 1,
+      "revision": 2,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false,
-      "updatedAt": "2026-10-19T13:59:16.610Z"
+      "updatedAt": "2026-10-19T14:02:42.569Z"
     },
     {
       "id": "outreach-2026-10-22-5",
@@ -558,6 +558,7 @@
     "51d385e3-7a14-4cfc-a468-55265cbd5a57",
     "7502d65e-9fd9-4b02-9bd4-e9a9f4fbb2a3",
     "2d8eabee-bf01-47a2-b103-b5071489683f",
-    "70e9335a-6c75-4917-a474-f4393bbe9a66"
+    "70e9335a-6c75-4917-a474-f4393bbe9a66",
+    "05492ad8-7d68-40a4-8f8f-da0780818242"
   ]
 }
