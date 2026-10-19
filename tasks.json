@@ -8,9 +8,9 @@
       "title": "Կազմել անձնական կապերի ցուցակը",
       "target": "80 կապ",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -57,9 +57,9 @@
       "title": "Ստուգել գրանցման հղումը",
       "target": "1 ամբողջական փորձնական գրանցում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -69,9 +69,9 @@
       "title": "Ուղարկել անձնական դիմումներ",
       "target": "20 անձնական դիմում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -117,9 +117,9 @@
       "title": "Թիմին փոխանցել տարածման նյութերը",
       "target": "3–4 անդամ ստացել է նյութերը",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -153,9 +153,9 @@
       "title": "Ուղարկել անձնական դիմումներ",
       "target": "15 դիմում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -177,9 +177,9 @@
       "title": "Ամփոփել օրվա արդյունքները",
       "target": "1 ամփոփում՝ դիմումներ, պատասխաններ, գրանցումներ",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -213,9 +213,9 @@
       "title": "Ուղարկել անձնական դիմումներ",
       "target": "15 դիմում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -273,9 +273,9 @@
       "title": "Ուղարկել անձնական դիմումներ",
       "target": "15 դիմում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -297,9 +297,9 @@
       "title": "Ամփոփել գրանցումները",
       "target": "1 թարմ ամփոփում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -309,9 +309,9 @@
       "title": "Ճշտել հաստատված գրանցումներն ու ազատ տեղերը",
       "target": "2 ճշտված թիվ",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -357,9 +357,9 @@
       "title": "Որոշել գրանցման վերջնաժամկետը",
       "target": "1 վերջնական որոշում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -381,9 +381,9 @@
       "title": "Ամփոփել դիմումները",
       "target": "Բոլոր դիմումների կարգավիճակները ճշտված են",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -417,9 +417,9 @@
       "title": "Փակել գրանցումները՝ ըստ ընդունված որոշման",
       "target": "Փակման կամ շարունակման որոշումը կատարված է",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -441,9 +441,9 @@
       "title": "Պատրաստել տարածման արշավի հաշվետվությունը",
       "target": "1 հաշվետվություն՝ կապեր, դիմումներ, գրանցումներ",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -453,9 +453,9 @@
       "title": "Վերջնական թիվը փոխանցել լոգիստիկայի և ֆինանսների թիմերին",
       "target": "2 թիմ ստացել է վերջնական թիվը",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
       "deleted": false
     },
     {
@@ -472,11 +472,18 @@
       "updatedAt": "2026-10-19T13:46:47.503Z"
     }
   ],
-  "members": [],
+  "members": [
+    {
+      "id": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "name": "Սյունէ",
+      "role": "Ա"
+    }
+  ],
   "appliedOps": [
     "b98ea7a9-d028-4566-8425-46aba30751a4",
     "c563c0fe-f2b6-4203-8f26-bfc5b5bb0b16",
     "c67447ec-ba0c-41c4-bac9-37d4db1fee93",
-    "10924dd4-33f0-404e-ae34-a42da76a53ed"
+    "10924dd4-33f0-404e-ae34-a42da76a53ed",
+    "0aa04245-7443-4d54-a7e9-ecddbd7f45b7"
   ]
 }
