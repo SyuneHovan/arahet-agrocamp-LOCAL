@@ -150,10 +150,11 @@
       "title": "Ավելացնել դպրոցական և ծնողական կապեր",
       "target": "10 լրացուցիչ կապ",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T13:57:58.023Z"
     },
     {
       "id": "outreach-2026-10-21-3",
@@ -531,6 +532,7 @@
     "7a6bccd1-63f8-4004-92d4-613d397b1556",
     "9cd755e1-cc36-4eb4-8d82-c244d88539cc",
     "7e4b0460-4a1f-47c3-b3d4-e9b528331272",
-    "947dc958-e5b1-4708-8e01-6b7a3fe8014e"
+    "947dc958-e5b1-4708-8e01-6b7a3fe8014e",
+    "a1d87b71-c252-44f9-a386-807743fd644b"
   ]
 }
