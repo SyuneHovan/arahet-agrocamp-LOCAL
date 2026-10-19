@@ -467,15 +467,16 @@
       "title": "Ժամանակավոր ստուգում · կհեռացվի",
       "date": "2026-10-26",
       "id": "ec9bf4f1-41f3-4837-ae4c-7c0dfbd47b57",
-      "revision": 2,
-      "deleted": false,
-      "updatedAt": "2026-10-19T13:46:33.577Z"
+      "revision": 3,
+      "deleted": true,
+      "updatedAt": "2026-10-19T13:46:47.503Z"
     }
   ],
   "members": [],
   "appliedOps": [
     "b98ea7a9-d028-4566-8425-46aba30751a4",
     "c563c0fe-f2b6-4203-8f26-bfc5b5bb0b16",
-    "c67447ec-ba0c-41c4-bac9-37d4db1fee93"
+    "c67447ec-ba0c-41c4-bac9-37d4db1fee93",
+    "10924dd4-33f0-404e-ae34-a42da76a53ed"
   ]
 }
