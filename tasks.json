@@ -158,15 +158,16 @@
     },
     {
       "id": "outreach-2026-10-21-3",
-      "date": "2026-10-21",
+      "date": "2026-10-20",
       "role": "Ա",
       "title": "Ուղարկել անձնական դիմումներ",
       "target": "15 դիմում",
       "done": false,
-      "revision": 1,
+      "revision": 2,
       "description": "",
       "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
-      "deleted": false
+      "deleted": false,
+      "updatedAt": "2026-10-19T13:58:32.115Z"
     },
     {
       "id": "outreach-2026-10-21-4",
@@ -537,6 +538,7 @@
     "947dc958-e5b1-4708-8e01-6b7a3fe8014e",
     "a1d87b71-c252-44f9-a386-807743fd644b",
     "ba18608f-b3eb-41a0-80ca-e2ee415167df",
-    "1bc5badb-7d48-47c6-97d5-8b25aed80c91"
+    "1bc5badb-7d48-47c6-97d5-8b25aed80c91",
+    "f9a06f21-021d-482b-9fdf-7db1bec657e3"
   ]
 }
