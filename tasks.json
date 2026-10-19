@@ -486,6 +486,18 @@
       "revision": 3,
       "deleted": true,
       "updatedAt": "2026-10-19T13:46:47.503Z"
+    },
+    {
+      "description": "",
+      "target": "2-3 հրապարակում",
+      "role": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "done": false,
+      "title": "Պատրաստել մի քանի հրապարակում",
+      "date": "2026-10-19",
+      "id": "7e403309-a18d-4d00-b5cd-7cd2bf460ee6",
+      "revision": 0,
+      "deleted": false
     }
   ],
   "members": [
@@ -545,6 +557,7 @@
     "078520fc-e38c-4ee0-94f7-0297a9e0002d",
     "51d385e3-7a14-4cfc-a468-55265cbd5a57",
     "7502d65e-9fd9-4b02-9bd4-e9a9f4fbb2a3",
-    "2d8eabee-bf01-47a2-b103-b5071489683f"
+    "2d8eabee-bf01-47a2-b103-b5071489683f",
+    "70e9335a-6c75-4917-a474-f4393bbe9a66"
   ]
 }
