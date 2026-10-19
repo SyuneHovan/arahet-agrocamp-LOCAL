@@ -417,10 +417,11 @@
       "title": "Ամփոփել գործընկերների ուղղորդումները",
       "target": "1 ամփոփում՝ ըստ գործընկերների",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T14:11:05.359Z"
     },
     {
       "id": "outreach-2026-10-25-4",
@@ -575,6 +576,7 @@
     "39682b90-f4fe-4045-bef1-2e8fb0c37e9d",
     "dc49e15c-1c5b-4a07-b7e9-f206fe147978",
     "19ee2b2f-93b2-40bf-be85-7967a11127de",
-    "d35bfbcc-b105-4f93-af7e-3b0f71af62a4"
+    "d35bfbcc-b105-4f93-af7e-3b0f71af62a4",
+    "664d1356-1cee-4f12-b540-481ebdfeb45f"
   ]
 }
