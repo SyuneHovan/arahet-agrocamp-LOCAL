@@ -16,8 +16,9 @@
       "role": "Դ",
       "title": "Պատրաստել հիմնական հայտարարությունը",
       "target": "1 պատրաստ տեքստ",
-      "done": false,
-      "revision": 0
+      "done": true,
+      "revision": 1,
+      "updatedAt": "2026-10-19T13:29:54.110Z"
     },
     {
       "id": "outreach-2026-10-19-3",
