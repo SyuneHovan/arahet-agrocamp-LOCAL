@@ -119,11 +119,12 @@
       "role": "Ա",
       "title": "Թիմին փոխանցել տարածման նյութերը",
       "target": "3–4 անդամ ստացել է նյութերը",
-      "done": false,
-      "revision": 1,
+      "done": true,
+      "revision": 2,
       "description": "",
       "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
-      "deleted": false
+      "deleted": false,
+      "updatedAt": "2026-10-19T13:51:56.489Z"
     },
     {
       "id": "outreach-2026-10-21-1",
@@ -491,6 +492,7 @@
     "ffe698d5-15c7-46a9-abf7-44928777becd",
     "1173c9a0-e23b-44a0-8205-045049ca3ec5",
     "3e6f95b4-4af4-476e-bf66-d44f72faaf10",
-    "78506520-a673-479a-96c3-784d29018ea6"
+    "78506520-a673-479a-96c3-784d29018ea6",
+    "6acd822d-098f-4d97-b8f0-ab54959676cf"
   ]
 }
