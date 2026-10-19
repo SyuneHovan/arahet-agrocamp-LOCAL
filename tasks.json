@@ -32,11 +32,12 @@
       "role": "Դ",
       "title": "Պատրաստել պարզ պաստառ",
       "target": "1 պաստառ՝ առանց նոր լուսանկարների պահանջի",
-      "done": false,
-      "revision": 0,
+      "done": true,
+      "revision": 1,
       "description": "",
       "assigneeId": "",
-      "deleted": false
+      "deleted": false,
+      "updatedAt": "2026-10-19T13:50:48.762Z"
     },
     {
       "id": "outreach-2026-10-19-4",
@@ -487,6 +488,7 @@
     "10924dd4-33f0-404e-ae34-a42da76a53ed",
     "0aa04245-7443-4d54-a7e9-ecddbd7f45b7",
     "ffe698d5-15c7-46a9-abf7-44928777becd",
-    "1173c9a0-e23b-44a0-8205-045049ca3ec5"
+    "1173c9a0-e23b-44a0-8205-045049ca3ec5",
+    "3e6f95b4-4af4-476e-bf66-d44f72faaf10"
   ]
 }
