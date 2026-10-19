@@ -235,15 +235,16 @@
     },
     {
       "id": "outreach-2026-10-22-4",
-      "date": "2026-10-22",
+      "date": "2026-10-20",
       "role": "Դ",
       "title": "Տեղադրել երկրորդ հրապարակումը",
       "target": "1 հրապարակում",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
       "assigneeId": "",
-      "deleted": false
+      "deleted": false,
+      "updatedAt": "2026-10-19T13:59:16.610Z"
     },
     {
       "id": "outreach-2026-10-22-5",
@@ -543,6 +544,7 @@
     "f9a06f21-021d-482b-9fdf-7db1bec657e3",
     "078520fc-e38c-4ee0-94f7-0297a9e0002d",
     "51d385e3-7a14-4cfc-a468-55265cbd5a57",
-    "7502d65e-9fd9-4b02-9bd4-e9a9f4fbb2a3"
+    "7502d65e-9fd9-4b02-9bd4-e9a9f4fbb2a3",
+    "2d8eabee-bf01-47a2-b103-b5071489683f"
   ]
 }
