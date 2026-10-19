@@ -354,10 +354,11 @@
       "title": "Կապվել դեռ չհրապարակած խմբերի հետ",
       "target": "Բոլոր սպասվող խմբերի հետ կապ",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
       "assigneeId": "",
-      "deleted": false
+      "deleted": true,
+      "updatedAt": "2026-10-19T14:06:44.502Z"
     },
     {
       "id": "outreach-2026-10-24-4",
@@ -569,6 +570,7 @@
     "35bb703e-9155-4afb-a515-03359d7619e8",
     "3ee31b2a-a675-43c9-bba9-4eace1cce582",
     "5164077e-ce52-44b7-9592-d09029cf0060",
-    "39682b90-f4fe-4045-bef1-2e8fb0c37e9d"
+    "39682b90-f4fe-4045-bef1-2e8fb0c37e9d",
+    "dc49e15c-1c5b-4a07-b7e9-f206fe147978"
   ]
 }
