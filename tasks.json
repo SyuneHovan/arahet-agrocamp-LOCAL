@@ -430,10 +430,11 @@
       "title": "Տեղեկացնել գրանցված ծնողներին",
       "target": "Բոլոր գրանցված ընտանիքները տեղեկացված են",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T14:11:08.976Z"
     },
     {
       "id": "outreach-2026-10-26-1",
@@ -577,6 +578,7 @@
     "dc49e15c-1c5b-4a07-b7e9-f206fe147978",
     "19ee2b2f-93b2-40bf-be85-7967a11127de",
     "d35bfbcc-b105-4f93-af7e-3b0f71af62a4",
-    "664d1356-1cee-4f12-b540-481ebdfeb45f"
+    "664d1356-1cee-4f12-b540-481ebdfeb45f",
+    "d563fd9e-b506-47c3-a514-153f3619fd0f"
   ]
 }
