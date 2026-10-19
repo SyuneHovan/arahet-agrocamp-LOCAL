@@ -19,3 +19,13 @@ Polling pauses in hidden tabs. GitHub outages, token expiration and API limits d
 ## Verification
 
 Run `npm test` for the mocked GitHub contract tests. Live persistence must also be checked with two separate browser sessions after configuring the token: mark one task, observe it in the second session, reload both, then unmark it and verify again. Confirm a data commit does not trigger a deployment. Check the layout at mobile and desktop widths.
+
+## Editable team plan (October 2026)
+
+Repository renamed to SyuneHovan/arahet-agrocamp-internal. Existing plan-data is preserved; no reset or database migration is required. Existing schemaVersion 1 records are normalized with optional description, assigneeId and deleted fields, plus shared members and bounded applied operation IDs.
+
+The UI supports task creation, partial field edits, descriptions, named assignment and recoverable soft deletion. Team members can be added with a name and an optional legacy role to claim unassigned role tasks. Choosing a name is only a remembered personal filter, not authentication or authorization. Anyone with the link can change the shared plan.
+
+Edits are optimistic and queued immediately, with a 400ms batch delay and serial requests. They do not disable other controls. Unconfirmed operations are stored locally as a clearly marked outbox, not as a substitute for shared persistence. The common source remains the GitHub JSON. The user can retry or discard unsaved drafts. Successful operation IDs prevent a lost response from replaying an old change. Same-field conflicts require explicit retry/rebase; different fields can merge. Polling is every 30 seconds while visible and idle. GitHub commits still take network time; the UI does not claim durability before confirmation.
+
+Verification: npm test includes 16 cases for legacy compatibility, member assignment, create/edit/delete, concurrent updates, atomic conflict rejection, idempotency, validation and outages. tests/preview-server.cjs is a local-only simulated GitHub store for browser verification and is not a production API.
