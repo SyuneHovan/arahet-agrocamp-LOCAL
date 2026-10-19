@@ -205,10 +205,11 @@
       "title": "Կապվել ծնողական խմբերի ադմինների հետ",
       "target": "10 ադմին",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "description": "",
-      "assigneeId": "",
-      "deleted": false
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "deleted": false,
+      "updatedAt": "2026-10-19T13:53:00.542Z"
     },
     {
       "id": "outreach-2026-10-22-3",
@@ -493,6 +494,7 @@
     "1173c9a0-e23b-44a0-8205-045049ca3ec5",
     "3e6f95b4-4af4-476e-bf66-d44f72faaf10",
     "78506520-a673-479a-96c3-784d29018ea6",
-    "6acd822d-098f-4d97-b8f0-ab54959676cf"
+    "6acd822d-098f-4d97-b8f0-ab54959676cf",
+    "45bc164d-c3ef-4f87-b847-0c683041b5f5"
   ]
 }
