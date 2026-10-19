@@ -184,15 +184,16 @@
     },
     {
       "id": "outreach-2026-10-21-5",
-      "date": "2026-10-21",
+      "date": "2026-10-20",
       "role": "Ա",
       "title": "Ամփոփել օրվա արդյունքները",
       "target": "1 ամփոփում՝ դիմումներ, պատասխաններ, գրանցումներ",
       "done": false,
-      "revision": 1,
+      "revision": 2,
       "description": "",
       "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
-      "deleted": false
+      "deleted": false,
+      "updatedAt": "2026-10-19T13:58:40.408Z"
     },
     {
       "id": "outreach-2026-10-22-1",
@@ -540,6 +541,7 @@
     "ba18608f-b3eb-41a0-80ca-e2ee415167df",
     "1bc5badb-7d48-47c6-97d5-8b25aed80c91",
     "f9a06f21-021d-482b-9fdf-7db1bec657e3",
-    "078520fc-e38c-4ee0-94f7-0297a9e0002d"
+    "078520fc-e38c-4ee0-94f7-0297a9e0002d",
+    "51d385e3-7a14-4cfc-a468-55265cbd5a57"
   ]
 }
