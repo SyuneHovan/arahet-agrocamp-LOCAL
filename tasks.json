@@ -849,11 +849,12 @@
       "description": "",
       "target": "",
       "role": "",
-      "assigneeId": "",
+      "assigneeId": "278d56a7-f14f-4ae3-8f41-64e4f1edb12d",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "deleted": false,
-      "completions": {}
+      "completions": {},
+      "updatedAt": "2026-10-20T10:00:25.429Z"
     },
     {
       "id": "replan-20261019-18",
@@ -1116,6 +1117,7 @@
     "a6a6a951-070a-439c-8e2a-29b8f9731c62",
     "11871f14-5d50-4385-88e3-c99ce6748524",
     "e2b7e177-693b-4a83-ac3a-c19112670f35",
-    "1274c3c3-0ef4-4a93-8feb-a7fb14bdf41c"
+    "1274c3c3-0ef4-4a93-8feb-a7fb14bdf41c",
+    "028b648d-afb8-4c54-a45e-a69ba1db54d5"
   ]
 }
