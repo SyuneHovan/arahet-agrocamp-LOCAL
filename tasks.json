@@ -1035,6 +1035,76 @@
       "deleted": false,
       "completions": {},
       "updatedAt": "2026-10-20T10:01:16.995Z"
+    },
+    {
+      "description": "",
+      "target": "",
+      "role": "",
+      "assigneeId": "",
+      "done": false,
+      "title": "Կազմել վերջնական մենյուն",
+      "category": "Սնունդ",
+      "date": "2026-10-20",
+      "completions": {},
+      "id": "food-2026-10-20-1",
+      "revision": 0,
+      "deleted": false
+    },
+    {
+      "description": "",
+      "target": "",
+      "role": "",
+      "assigneeId": "",
+      "done": false,
+      "title": "Կազմել մթերքների վերջնական ցանկը",
+      "category": "Սնունդ",
+      "date": "2026-10-20",
+      "completions": {},
+      "id": "food-2026-10-20-2",
+      "revision": 0,
+      "deleted": false
+    },
+    {
+      "description": "",
+      "target": "",
+      "role": "",
+      "assigneeId": "",
+      "done": false,
+      "title": "Տեղադրել «Բարձունք»-ի ներքին էջում և ճշտել՝ որ մթերքներն ենք ստանում համայնքից",
+      "category": "Սնունդ",
+      "date": "2026-10-20",
+      "completions": {},
+      "id": "food-2026-10-20-3",
+      "revision": 0,
+      "deleted": false
+    },
+    {
+      "description": "",
+      "target": "",
+      "role": "",
+      "assigneeId": "",
+      "done": false,
+      "title": "Վերջնականացնել մնացած գնումների ցանկը",
+      "category": "Սնունդ",
+      "date": "2026-10-20",
+      "completions": {},
+      "id": "food-2026-10-20-4",
+      "revision": 0,
+      "deleted": false
+    },
+    {
+      "description": "",
+      "target": "",
+      "role": "",
+      "assigneeId": "",
+      "done": false,
+      "title": "Կատարել գնումները",
+      "category": "Սնունդ",
+      "date": "2026-10-20",
+      "completions": {},
+      "id": "food-2026-10-20-5",
+      "revision": 0,
+      "deleted": false
     }
   ],
   "members": [
@@ -1154,6 +1224,11 @@
     "8a26327f-bd1f-449c-abf2-6a6b2e11f5c7",
     "db60ce47-82d7-48fa-8c9a-7982c870c66e",
     "120bc8fb-4bb2-48c9-a3f2-cd2b0731a47b",
-    "68bc47e5-313d-4d10-b0c4-25845a610f85"
+    "68bc47e5-313d-4d10-b0c4-25845a610f85",
+    "food-add-2026-10-20-1",
+    "food-add-2026-10-20-2",
+    "food-add-2026-10-20-3",
+    "food-add-2026-10-20-4",
+    "food-add-2026-10-20-5"
   ]
 }
