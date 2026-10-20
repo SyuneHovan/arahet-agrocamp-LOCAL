@@ -984,11 +984,12 @@
       "description": "Նախնական՝ 6–7 չորստեղանոց կամ աւելի քիչ եօթտեղանոց մեքենայ",
       "target": "",
       "role": "",
-      "assigneeId": "",
+      "assigneeId": "278d56a7-f14f-4ae3-8f41-64e4f1edb12d",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "deleted": false,
-      "completions": {}
+      "completions": {},
+      "updatedAt": "2026-10-20T10:00:52.820Z"
     },
     {
       "id": "replan-20261019-27",
@@ -1134,6 +1135,7 @@
     "4f2e020d-ae44-4310-845e-f5919a696cf3",
     "54fac43b-28b3-48f7-bdef-d49e6834cf38",
     "3beb02cb-8568-4423-b4cf-478a83de4c7b",
-    "8ffd30be-a900-4720-b387-45645817404e"
+    "8ffd30be-a900-4720-b387-45645817404e",
+    "fbf6479d-10c9-4401-8950-34aa6d52035a"
   ]
 }
