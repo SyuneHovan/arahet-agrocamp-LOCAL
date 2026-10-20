@@ -819,11 +819,12 @@
       "description": "Քանակը ճշտել ըստ տան պայմանների",
       "target": "",
       "role": "",
-      "assigneeId": "",
+      "assigneeId": "278d56a7-f14f-4ae3-8f41-64e4f1edb12d",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "deleted": false,
-      "completions": {}
+      "completions": {},
+      "updatedAt": "2026-10-20T10:00:17.992Z"
     },
     {
       "id": "replan-20261019-16",
@@ -1112,6 +1113,7 @@
     "f9db0849-a7f9-4c04-8372-0e096c86dfa0",
     "43593a62-ce79-490c-bad9-995c39cf5a1c",
     "a6a6a951-070a-439c-8e2a-29b8f9731c62",
-    "11871f14-5d50-4385-88e3-c99ce6748524"
+    "11871f14-5d50-4385-88e3-c99ce6748524",
+    "e2b7e177-693b-4a83-ac3a-c19112670f35"
   ]
 }
