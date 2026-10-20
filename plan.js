@@ -32,7 +32,7 @@
     $('progressLabel').textContent=done+' / '+subset.length+' կատարված';$('progress').max=subset.length||1;$('progress').value=done;
     const visible=subset.filter(t=>!$('state').value||displayedDone(t)===($('state').value==='done'));
     const category=t=>t.category||'Տարածում';
-    const categoryOrder=['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ'];
+    const categoryOrder=['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ','Սնունդ'];
     $('tasks').innerHTML=[...new Set(visible.map(category))].sort((a,b)=>(categoryOrder.indexOf(a)<0?99:categoryOrder.indexOf(a))-(categoryOrder.indexOf(b)<0?99:categoryOrder.indexOf(b))).map(cat=>'<section><div class="day-heading"><h2>'+esc(cat)+'</h2><span>'+visible.filter(t=>category(t)===cat).length+'</span></div>'+visible.filter(t=>category(t)===cat).sort((a,b)=>a.date.localeCompare(b.date)).map(t=>{
       const m=d.members.find(m=>m.id===t.assigneeId),pending=outbox.some(o=>o.id===t.id);
       return '<article class="task '+(displayedDone(t)?'done':'')+'"><input type="checkbox" id="check-'+esc(t.id)+'" data-id="'+esc(t.id)+'" aria-label="'+esc(t.title)+'" '+(personalDone(t)?'checked':'')+' '+(!connected||(t.assigneeId==='all'&&!me)?'disabled':'')+'><button class="task-main" data-edit="'+esc(t.id)+'" aria-label="Խմբագրել՝ '+esc(t.title)+'"><span class="task-title">'+esc(t.title)+'</span>'+(t.description||t.target?'<span class="task-note">'+esc(t.description||t.target)+'</span>':'')+'</button><div class="task-end"><span class="task-status" title="'+(pending?(error?'Չպահպանված':'Պահպանվում է'):'')+'">'+(pending?(error?'!':'◷'):'')+'</span>'+(t.assigneeId==='all'?'<button class="completion-count" data-edit="'+esc(t.id)+'" title="Կատարած թիմակիցները">'+d.members.filter(m=>t.completions[m.id]===true).length+'/'+d.members.length+'</button>':'')+'<button type="button" class="avatar avatar-button" data-assign="'+esc(t.id)+'" title="Փոխել պատասխանատուին՝ '+esc(t.assigneeId==='all'?'Բոլորի համար':m?.name||'Չհանձնարարված')+'" aria-label="Փոխել պատասխանատուին՝ '+esc(t.title)+'">'+esc(t.assigneeId==='all'?'∀':m?Array.from(m.name)[0]:t.role||'–')+'</button></div></article>';
@@ -88,7 +88,7 @@
     $('taskDate').value=t?.date||$('day').value||new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Yerevan',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
     $('taskAssignee').innerHTML='<option value="">Չհանձնարարված</option><option value="all">Բոլորի համար</option>'+d.members.map(m=>'<option value="'+esc(m.id)+'">'+esc(m.name)+'</option>').join('');
     $('taskAssignee').value=t?t.assigneeId:(d.members.some(m=>m.id===person)?person:'');
-    $('taskCategory').innerHTML=['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ'].map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');$('taskCategory').value=t?.category||'Տարածում';
+    $('taskCategory').innerHTML=['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ','Սնունդ'].map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');$('taskCategory').value=t?.category||'Տարածում';
     $('deleteTask').hidden=!t;$('taskForm').querySelector('[type=submit]').disabled=!connected;$('deleteTask').disabled=!connected;
     renderCompletions();$('taskDialog').showModal();$('taskTitle').focus();
   }
