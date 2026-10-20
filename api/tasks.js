@@ -14,7 +14,7 @@ function normalize(data) {
     throw new StoreError(502,'invalid_store');
   data.members ??= []; data.appliedOps ??= [];
   if(!Array.isArray(data.members)||!Array.isArray(data.appliedOps))throw new StoreError(502,'invalid_store');
-  for(const t of data.tasks){t.description??='';t.category??='Տարածում';t.assigneeId??='';t.deleted??=false;}
+  for(const t of data.tasks){t.description??='';t.category??='Տարածում';t.assigneeId??='';t.deleted??=false;t.completions??={};if(t.assigneeId==='all')t.done=data.members.length>0&&data.members.every(m=>t.completions[m.id]===true);}
   return data;
 }
 function apply(data,operations) {
@@ -38,14 +38,21 @@ function apply(data,operations) {
       const t=op.task;
       if(!t||Object.keys(t).some(k=>!Object.hasOwn(fields,k))||!fields.title(t.title)||!fields.date(t.date))bad();
       for(const [k,v] of Object.entries(t))if(!fields[k](v))bad();
-      if(t.assigneeId&&!data.members.some(m=>m.id===t.assigneeId))bad();
-      data.tasks.push({description:'',target:'',role:'',category:'Տարածում',assigneeId:'',done:false,...t,id:op.id,revision:0,deleted:false});
+      if(t.assigneeId&&t.assigneeId!=='all'&&!data.members.some(m=>m.id===t.assigneeId))bad();
+      data.tasks.push({description:'',target:'',role:'',assigneeId:'',done:false,...t,...(t.assigneeId==='all'?{done:false}:{}),completions:{},id:op.id,revision:0,deleted:false});
     }else {
       const t=data.tasks.find(t=>t.id===op.id);
       if(!t)throw new StoreError(404,'unknown_task');
       if(op.type==='task.delete'){
         if(!t.deleted&&t.revision!==op.revision)throw new StoreError(409,'task_changed');
         t.deleted=true;t.revision++;
+      }else if(op.type==='task.complete'){
+        if(t.deleted)throw new StoreError(409,'task_deleted');
+        if(t.assigneeId!=='all')throw new StoreError(409,'task_changed');
+        if(!data.members.some(m=>m.id===op.memberId)||typeof op.done!=='boolean'||typeof op.base!=='boolean')bad();
+        const current=t.completions[op.memberId]===true;
+        if(current!==op.base&&current!==op.done)throw new StoreError(409,'task_changed');
+        t.completions[op.memberId]=op.done;t.revision++;
       }else if(op.type==='task.update'){
         if(t.deleted)throw new StoreError(409,'task_deleted');
         if(!op.patch||!op.base||!Object.keys(op.patch).length||Object.keys(op.patch).some(k=>!Object.hasOwn(fields,k)))bad();
@@ -53,7 +60,9 @@ function apply(data,operations) {
           if(!fields[k](v)||!Object.hasOwn(op.base,k))bad();
           if(t[k]!==op.base[k]&&t[k]!==v)throw new StoreError(409,'task_changed');
         }
-        if(op.patch.assigneeId&&!data.members.some(m=>m.id===op.patch.assigneeId))bad();
+        if(t.assigneeId==='all'&&Object.hasOwn(op.patch,'done'))bad();
+        if(op.patch.assigneeId&&op.patch.assigneeId!=='all'&&!data.members.some(m=>m.id===op.patch.assigneeId))bad();
+        if(Object.hasOwn(op.patch,'assigneeId')&&op.patch.assigneeId!==t.assigneeId&&(t.assigneeId==='all'||op.patch.assigneeId==='all'))t.done=false;
         Object.assign(t,op.patch);t.revision++;
       }else bad();
       t.updatedAt=new Date().toISOString();
@@ -61,6 +70,7 @@ function apply(data,operations) {
     data.appliedOps.push(op.opId);changed=true;
   }
   data.appliedOps=data.appliedOps.slice(-1500);
+  normalize(data);
   return changed;
 }
 function createHandler({fetchImpl=globalThis.fetch,token=()=>process.env.ARAHET_GITHUB_TOKEN,pause=ms=>new Promise(r=>setTimeout(r,ms))}={}) {
@@ -97,6 +107,7 @@ function createHandler({fetchImpl=globalThis.fetch,token=()=>process.env.ARAHET_
           if(legacy){
             const t=data.tasks.find(t=>t.id===body.id&&!t.deleted);
             if(!t)throw new StoreError(404,'unknown_task');
+            if(t.assigneeId==='all')bad();
             if(t.done===body.done)return res.status(200).json(data);
             if(t.revision!==body.revision)throw new StoreError(409,'task_changed');
             t.done=body.done;t.revision++;

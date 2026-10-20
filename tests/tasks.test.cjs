@@ -31,6 +31,34 @@ test('GitHub outage never becomes successful save',async()=>{const handler=creat
 test('corrupt JSON never overwritten',async()=>{let writes=0;const handler=createHandler({token:()=> 'test',fetchImpl:async(url,opts)=>{if(opts.method==='PUT')writes++;return {ok:true,json:async()=>({sha:'1',encoding:'base64',content:Buffer.from('{}').toString('base64')})};}});assert.equal((await call(handler,'PATCH',{id:seed.tasks[0].id,done:true,revision:0})).status,502);assert.equal(writes,0);});
 
 const operation=(type,id,rest={})=>({type,id,opId:require('node:crypto').randomUUID(),...rest});
+
+test('everyone tasks merge concurrent member completions, persist and recompute when team grows',async()=>{
+ const s=simulator();
+ const send=ops=>call(s.handler,'PATCH',{operations:ops});
+ await send(['a','b'].map(id=>operation('member.add',id,{member:{name:id}})));
+ assert.equal((await send([operation('task.create','shared',{task:{title:'Shared',date:'2026-10-20',assigneeId:'all'}})])).status,200);
+ const toggle=(memberId,done,base)=>operation('task.complete','shared',{memberId,done,base});
+ const results=await Promise.all(['a','b'].map(id=>send([toggle(id,true,false)])));
+ assert.ok(results.every(r=>r.status===200));
+ let t=(await call(s.handler)).data.tasks.find(t=>t.id==='shared');
+ assert.deepEqual(t.completions,{a:true,b:true});assert.equal(t.done,true);
+ await send([toggle('a',false,true)]);
+ t=(await call(s.handler)).data.tasks.find(t=>t.id==='shared');
+ assert.equal(t.done,false);assert.equal(t.completions.b,true);
+ await send([toggle('a',true,false)]);
+ await send([operation('member.add','c',{member:{name:'c'}})]);
+ assert.equal((await call(s.handler)).data.tasks.find(t=>t.id==='shared').done,false);
+ assert.equal((await send([toggle('missing',true,false)])).status,400);
+ assert.equal((await send([operation('task.update','shared',{patch:{done:true},base:{done:false}})])).status,400);
+ assert.equal((await call(s.handler,'PATCH',{id:'shared',done:true,revision:4})).status,400);
+});
+
+test('everyone assignment never inherits individual completion and zero-member task remains pending',async()=>{
+ const s=simulator(),id=seed.tasks[0].id;
+ await call(s.handler,'PATCH',{operations:[operation('task.update',id,{patch:{done:true},base:{done:false}}),operation('task.update',id,{patch:{assigneeId:'all'},base:{assigneeId:''}})]});
+ const t=(await call(s.handler)).data.tasks[0];
+ assert.equal(t.done,false);assert.deepEqual(t.completions,{});
+});
 test('member role claims only unassigned tasks; creating editing deleting task persists',async()=>{
  const s=simulator();const member=operation('member.add','member-one',{member:{name:'Անի',role:'Ա'}});
  let r=await call(s.handler,'PATCH',{operations:[member]});assert.equal(r.status,200);assert.ok(r.data.tasks.filter(t=>t.role==='Ա').every(t=>t.assigneeId==='member-one'));
