@@ -1029,11 +1029,12 @@
       "description": "Հոկ. 27՝ 09:00, հոկ. 29՝ մոտ 16:30",
       "target": "",
       "role": "",
-      "assigneeId": "",
+      "assigneeId": "278d56a7-f14f-4ae3-8f41-64e4f1edb12d",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "deleted": false,
-      "completions": {}
+      "completions": {},
+      "updatedAt": "2026-10-20T10:01:13.698Z"
     }
   ],
   "members": [
@@ -1140,6 +1141,7 @@
     "8ffd30be-a900-4720-b387-45645817404e",
     "fbf6479d-10c9-4401-8950-34aa6d52035a",
     "f62c2ddf-f1c4-4dd7-bac9-45ad84ea90bb",
-    "28c25433-679e-475f-bee6-b62029418085"
+    "28c25433-679e-475f-bee6-b62029418085",
+    "d8d43deb-20cc-42b4-88c0-77cec44ebc02"
   ]
 }
