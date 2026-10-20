@@ -739,16 +739,17 @@
     {
       "id": "replan-20261019-10",
       "category": "Տարածում",
-      "title": "Շարունակական հրապարակումներ անել եւ պատասխանել ծնողներին",
+      "title": "Շարունակական պատասխանել ծնողներին",
       "date": "2026-10-22",
       "description": "",
       "target": "",
       "role": "",
       "assigneeId": "",
       "done": false,
-      "revision": 0,
+      "revision": 1,
       "deleted": false,
-      "completions": {}
+      "completions": {},
+      "updatedAt": "2026-10-20T09:59:38.491Z"
     },
     {
       "id": "replan-20261019-11",
@@ -1101,6 +1102,7 @@
     "cf3ca710-9182-407e-91cf-a9f529e83ae0",
     "1e2c298d-75be-47d1-9787-5bcd0427bbc8",
     "882ab4b3-c7cc-475b-a0ac-4ac59409fb38",
-    "94915bc3-6ddd-4f59-9291-4112074593df"
+    "94915bc3-6ddd-4f59-9291-4112074593df",
+    "15deb54c-2dc5-4aa0-a717-3f8eace74df8"
   ]
 }
