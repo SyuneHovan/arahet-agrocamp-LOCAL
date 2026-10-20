@@ -654,12 +654,12 @@
       "description": "Ադմինների թոյլտուութեամբ",
       "target": "",
       "role": "",
-      "assigneeId": "33f9110b-5662-4ee5-8db7-fc9f38b230c6",
+      "assigneeId": "f04dd132-657d-49bf-a5ec-112d37f355fb",
       "done": false,
-      "revision": 1,
+      "revision": 2,
       "deleted": false,
       "completions": {},
-      "updatedAt": "2026-10-20T09:58:39.091Z"
+      "updatedAt": "2026-10-20T09:58:48.099Z"
     },
     {
       "id": "replan-20261019-5",
@@ -1093,6 +1093,7 @@
     "de59ffdf-a89c-4f72-bf58-8a32a736838f",
     "80fa8dbd-39f2-4f23-9242-353988c54919",
     "cddc9681-c58e-4364-a9da-fe19e7012b60",
-    "4fa48267-0734-44b1-ab8f-6539186189db"
+    "4fa48267-0734-44b1-ab8f-6539186189db",
+    "a820dc99-a93f-4cb4-ad6e-391220c12fbe"
   ]
 }
