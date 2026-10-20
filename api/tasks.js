@@ -6,7 +6,7 @@ class StoreError extends Error {
 const bad = () => { throw new StoreError(400,'invalid_change'); };
 const text = (x,max) => typeof x==='string' && x.length<=max;
 const validId = x => typeof x==='string' && /^[a-zA-Z0-9_-]{1,100}$/.test(x);
-const fields = {category:x=>text(x,100)&&['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ'].includes(x),title:x=>text(x,240)&&!!x.trim(),description:x=>text(x,6000),target:x=>text(x,500),date:x=>/^20\d\d-\d\d-\d\d$/.test(x)&&new Date(x+'T12:00:00Z').toISOString().slice(0,10)===x,role:x=>['','Ա','Բ','Գ','Դ'].includes(x),assigneeId:x=>x===''||validId(x),done:x=>typeof x==='boolean'};
+const fields = {category:x=>text(x,100)&&['Տարածում','Տուն','Գոյք · Գիշերակաց','Գոյք · Խոհանոց','Գոյք · Տնտեսական','Տրանսպորտ','Սնունդ'].includes(x),title:x=>text(x,240)&&!!x.trim(),description:x=>text(x,6000),target:x=>text(x,500),date:x=>/^20\d\d-\d\d-\d\d$/.test(x)&&new Date(x+'T12:00:00Z').toISOString().slice(0,10)===x,role:x=>['','Ա','Բ','Գ','Դ'].includes(x),assigneeId:x=>x===''||validId(x),done:x=>typeof x==='boolean'};
 function normalize(data) {
   if(data?.schemaVersion!==1||!Array.isArray(data.tasks)||data.tasks.length>5000||
     new Set(data.tasks.map(t=>t.id)).size!==data.tasks.length||
