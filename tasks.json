@@ -666,15 +666,15 @@
       "category": "Տարածում",
       "title": "Կազմել ծանօթ դպրոցների, կրթարանների եւ խմբակների ցանկ",
       "date": "2026-10-19",
-      "description": "",
+      "description": "Մեյլի փասը ուղարկել Մարիամին",
       "target": "",
       "role": "",
       "assigneeId": "bf830b2e-6233-4ae7-b21b-e4afeb17ec73",
       "done": false,
-      "revision": 3,
+      "revision": 4,
       "deleted": false,
       "completions": {},
-      "updatedAt": "2026-10-20T09:59:05.525Z"
+      "updatedAt": "2026-10-20T10:19:25.711Z"
     },
     {
       "id": "replan-20261019-6",
@@ -1149,6 +1149,7 @@
     "28c25433-679e-475f-bee6-b62029418085",
     "d8d43deb-20cc-42b4-88c0-77cec44ebc02",
     "f1f75c39-3ca9-4889-982e-084d608dff1e",
-    "5f417e6b-1c77-4ec2-961d-a2cb628787ea"
+    "5f417e6b-1c77-4ec2-961d-a2cb628787ea",
+    "7899de14-9577-43be-9f1f-0ae2668fbb36"
   ]
 }
