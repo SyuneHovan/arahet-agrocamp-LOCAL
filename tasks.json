@@ -800,16 +800,16 @@
       "id": "replan-20261019-14",
       "category": "Գոյք · Գիշերակաց",
       "title": "Ճարել քնապարկեր",
-      "date": "2026-10-23",
+      "date": "2026-10-20",
       "description": "Քանակը ճշտել ըստ տան պայմանների",
       "target": "",
       "role": "",
       "assigneeId": "278d56a7-f14f-4ae3-8f41-64e4f1edb12d",
       "done": false,
-      "revision": 1,
+      "revision": 2,
       "deleted": false,
       "completions": {},
-      "updatedAt": "2026-10-20T10:00:16.360Z"
+      "updatedAt": "2026-10-20T10:24:03.345Z"
     },
     {
       "id": "replan-20261019-15",
@@ -1150,6 +1150,7 @@
     "d8d43deb-20cc-42b4-88c0-77cec44ebc02",
     "f1f75c39-3ca9-4889-982e-084d608dff1e",
     "5f417e6b-1c77-4ec2-961d-a2cb628787ea",
-    "7899de14-9577-43be-9f1f-0ae2668fbb36"
+    "7899de14-9577-43be-9f1f-0ae2668fbb36",
+    "8a26327f-bd1f-449c-abf2-6a6b2e11f5c7"
   ]
 }
