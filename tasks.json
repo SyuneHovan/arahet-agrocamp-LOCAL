@@ -635,16 +635,16 @@
       "id": "replan-20261019-3",
       "category": "Տարածում",
       "title": "Գտնել արշաւական եւ ծնողական ֆորումներ ու չատեր",
-      "date": "2026-10-19",
-      "description": "",
+      "date": "2026-10-20",
+      "description": "10 խումբ",
       "target": "",
       "role": "",
       "assigneeId": "f04dd132-657d-49bf-a5ec-112d37f355fb",
       "done": false,
-      "revision": 3,
+      "revision": 4,
       "deleted": false,
       "completions": {},
-      "updatedAt": "2026-10-20T09:58:46.095Z"
+      "updatedAt": "2026-10-21T12:07:10.055Z"
     },
     {
       "id": "replan-20261019-4",
@@ -1230,6 +1230,7 @@
     "food-add-2026-10-20-3",
     "food-add-2026-10-20-4",
     "food-add-2026-10-20-5",
-    "5adc0387-e8b6-4479-8c53-b1d6564a2c75"
+    "5adc0387-e8b6-4479-8c53-b1d6564a2c75",
+    "347eea37-5ad6-42c0-95fc-c9308fccc9fa"
   ]
 }
