@@ -1105,6 +1105,20 @@
       "id": "food-2026-10-20-5",
       "revision": 0,
       "deleted": false
+    },
+    {
+      "description": "Հասմիկ Բաղրամյան",
+      "target": "",
+      "role": "",
+      "assigneeId": "4a11b000-1729-4e2d-b55e-ae8eb16d96b3",
+      "done": false,
+      "title": "Բանակցութիւններ",
+      "date": "2026-10-19",
+      "category": "Տարածում",
+      "completions": {},
+      "id": "9089b0ce-a39d-47fb-8cce-1001bf7fc488",
+      "revision": 0,
+      "deleted": false
     }
   ],
   "members": [
@@ -1231,6 +1245,7 @@
     "food-add-2026-10-20-4",
     "food-add-2026-10-20-5",
     "5adc0387-e8b6-4479-8c53-b1d6564a2c75",
-    "347eea37-5ad6-42c0-95fc-c9308fccc9fa"
+    "347eea37-5ad6-42c0-95fc-c9308fccc9fa",
+    "8f019a17-2f91-4027-820b-5de9f14a8d04"
   ]
 }
