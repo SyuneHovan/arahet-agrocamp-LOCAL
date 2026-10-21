@@ -606,15 +606,15 @@
       "category": "Տարածում",
       "title": "Կազմել ծանօթ մայրերի եւ ծնողների ցանկ",
       "date": "2026-10-19",
-      "description": "Սյունէ\n- Սօսէ\n- Կարինէ\n- Սէրինէ",
+      "description": "",
       "target": "",
       "role": "",
       "assigneeId": "all",
       "done": false,
-      "revision": 2,
+      "revision": 3,
       "deleted": false,
       "completions": {},
-      "updatedAt": "2026-10-20T11:17:53.339Z"
+      "updatedAt": "2026-10-21T08:51:59.613Z"
     },
     {
       "id": "replan-20261019-2",
@@ -1229,6 +1229,7 @@
     "food-add-2026-10-20-2",
     "food-add-2026-10-20-3",
     "food-add-2026-10-20-4",
-    "food-add-2026-10-20-5"
+    "food-add-2026-10-20-5",
+    "5adc0387-e8b6-4479-8c53-b1d6564a2c75"
   ]
 }
